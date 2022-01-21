@@ -1,18 +1,13 @@
-//LOADING ARRAY CONTENT
-document.addEventListener("DOMContentLoaded", function (event) {
-
-    document.getElementById("experience").disabled = true;
-
-    document.getElementById("show").addEventListener("click", function () {
-        console.log(PersonArray);
-        let message = "Name  City\n";
-        for (i = 0; i < PersonArray.length; i++) {
-            message = message + PersonArray[i].name + "  " + PersonArray[i].city + "\n";
+//Show movies within array
+function showMovie() {
+        console.log(moviesArray);
+        let message = "Title  Year Released Rating\n";
+        for (i = 0; i < moviesArray.length; i++) {
+            message = message + moviesArray[i].oMovieTitle + "  " + moviesArray[i].oYearReleased + "  " + moviesArray[i].oMovieRating + "\n";
         }
         document.getElementById("output").value = message;
-    });
-});
-// MOVIES ARRAY AND OBJECT
+}
+// Loading the array
 moviesArray = []; 
 moviesArray.length = 10;
 //Make sure that you tell the user which field is empty
@@ -23,13 +18,13 @@ function addMovie() {
     //VALIDATION 
     if (movieTitle === '' || yearReleased === '' || userRating === '' ) {
         alert('Please, fill out the empty fields :)');
-    } else if (userRating >= 5) {
+    } else if (userRating >= 6) {
         alert('Please enter a number between 1 & 5 :)');
     } else {
         let MovieReview = {
-            movieTitle:  movieTitle,
-            movieRating: userRating,
-            yearReleased: yearReleased,
+            oMovieTitle:  movieTitle,
+            oMovieRating: userRating,
+            oYearReleased: yearReleased,
         }
         moviesArray.push(MovieReview);
     } 

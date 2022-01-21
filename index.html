@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyMovieList</title>
 </head>
 <body>
-    
+    <fieldset id="usersReview">
+        <legend>Add a movie</legend>
+       <label for="movieTitle"> Movie Title:</label> 
+        <input name="movieTitle" id="movieTitle" />
+
+        <label for="yearReleased">Year Released:</label>
+        <input name="yearReleased" id="yearReleased" />
+
+         <label for="userRating">Rating (1-5):</label>
+        <input name="userRating" id="userRating" />
+          <br>
+        <input type="submit" value="Submit" onclick="addMovie()">
+    </fieldset>
 </body>
 </html>

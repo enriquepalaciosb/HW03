@@ -2,7 +2,7 @@
     function showMovie() {
             let message = "Title  Year Released Rating\n";
             for (i = 0; i < moviesArray.length; i++) {
-                message = message + moviesArray[i].oMovieTitle + "  " + moviesArray[i].oYearReleased + "  " + moviesArray[i].oMovieRating + "\n";
+                message = message + moviesArray[i].title + "  " + moviesArray[i].year + "  " + moviesArray[i].rating + "\n";
             }
             document.getElementById("show").value = message;
     }

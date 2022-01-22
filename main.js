@@ -5,7 +5,7 @@
             for (i = 0; i < moviesArray.length; i++) {
                 message = message + moviesArray[i].oMovieTitle + "  " + moviesArray[i].oYearReleased + "  " + moviesArray[i].oMovieRating + "\n";
             }
-            document.getElementById("output").value = message;
+            document.getElementById("show").value = message;
     }
 // Loading the array
 moviesArray = []; 
@@ -23,10 +23,11 @@ moviesArray.length = 10;
         } else {
             // o = object
             let MovieReview = {
-                oMovieTitle:  movieTitle,
+                oMovieTitle: movieTitle,
                 oMovieRating: userRating,
-                oYearReleased: yearReleased,
+                oYearReleased: yearReleased
             }
             moviesArray.push(MovieReview);
+
         } 
     }

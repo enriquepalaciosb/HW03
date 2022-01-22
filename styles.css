@@ -10,9 +10,6 @@ label{
     font-family: 'PT Sans', sans-serif;
 }
 /* General stylings */
-body.text-primary.text-center{
-    background: linear-gradient(301deg, silver, white);
-}
 hr {
     border: none;
     /* top    */ border-top: 1px solid #ccc;

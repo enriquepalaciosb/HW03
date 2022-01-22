@@ -13,26 +13,27 @@
 <body class="text-primary text-center">
     <div class="mt-4 p-5 rounded">
         <h1>Welcome to MyMovieList!</h1>
-        <h3>Where everyone's a critic!</h3>
+        <h5>Where everyone's a critic!</h5>
     </div>
+    <form>
     <!-- Adding movies -->
     <fieldset id="usersReview">
         <legend>Add a movie</legend>
-            <label for="movieTitle"> Movie Title:</label> 
+            <label for="title"> Movie Title:</label> 
                 <br>
-            <input name="movieTitle" id="movieTitle" />
-                <br>
-                <hr>
-                <br>
-            <label for="yearReleased">Year Released:</label> 
-                <br>
-            <input name="yearReleased" id="yearReleased" /> 
+            <input name="title" id="title" />
                 <br>
                 <hr>
                 <br>
-            <label for="userRating">Rating (1-5):</label> 
+            <label for="year">Year Released:</label> 
                 <br>
-            <input name="userRating" id="userRating" /> 
+            <input name="year" id="year" /> 
+                <br>
+                <hr>
+                <br>
+            <label for="rating">Rating (1-5):</label> 
+                <br>
+            <input name="rating" id="rating" /> 
                 <br>
                 <hr>
                 <br>
@@ -42,10 +43,11 @@
     <br>
     <!-- Show movies -->
     <legend>Movies List</legend>
-    <input class="btn btn-primary" type="button" value="Show Movies" onclick="showMovie();"> <br>
+    <button class="btn btn-primary" type="button" value="Show Movies" onclick="showMovie();">Show Movies</button> <br>
     <br>
-    <textarea rows="10" cols="60" id="show"></textarea>
+    <textarea rows="10" cols="25" id="show"></textarea>
     <!-- BS5 Script -->
+    </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

@@ -1,6 +1,5 @@
 //Show movies within array
     function showMovie() {
-            console.log(moviesArray);
             let message = "Title  Year Released Rating\n";
             for (i = 0; i < moviesArray.length; i++) {
                 message = message + moviesArray[i].oMovieTitle + "  " + moviesArray[i].oYearReleased + "  " + moviesArray[i].oMovieRating + "\n";
@@ -12,9 +11,9 @@ moviesArray = [];
 moviesArray.length = 10;
 //Make sure that you tell the user which field is empty
     function addMovie() {
-        let movieTitle = document.getElementById("movieTitle").value.trim();
-        let yearReleased = document.getElementById("yearReleased").value.trim();
-        let userRating = document.getElementById("userRating").value.trim();
+        let movieTitle = document.getElementById("title").value.trim();
+        let yearReleased = document.getElementById("year").value.trim();
+        let userRating = document.getElementById("rating").value.trim();
         //VALIDATION 
         if (movieTitle === '' || yearReleased === '' || userRating === '' ) {
             alert('Please, fill out the empty fields :)');
@@ -22,12 +21,11 @@ moviesArray.length = 10;
             alert('Please enter a number between 1 & 5 :)');
         } else {
             // o = object
-            let MovieReview = {
-                oMovieTitle: movieTitle,
-                oMovieRating: userRating,
-                oYearReleased: yearReleased
+            let Movie = {
+                title: movieTitle,
+                rating: userRating,
+                year: yearReleased
             }
-            moviesArray.push(MovieReview);
-
+            moviesArray.push(Movie);
         } 
     }

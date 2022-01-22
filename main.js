@@ -7,7 +7,7 @@
             document.getElementById("show").value = message;
     }
 // Loading the array
-moviesArray = []; 
+let moviesArray = []; 
 moviesArray.length = 10;
 //Make sure that you tell the user which field is empty
     function addMovie() {

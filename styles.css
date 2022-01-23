@@ -10,10 +10,43 @@ label{
     font-family: 'PT Sans', sans-serif;
 }
 /* General stylings */
+h1, h5 {
+    background: midnightblue;
+}
 hr {
     border: none;
     /* top    */ border-top: 1px solid #ccc;
     /* middle */ background-color: #ddd; color: #ddd;
     /* bottom */ border-bottom: 1px solid #eee;
     height: 1px;
+}
+a {
+    text-decoration: none;
+}
+/* Jumbotron stlyings */
+.jumbotron {
+    background-image: url(images/movies-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* Content Stlyings */
+legend {
+    padding-top: 25px;
+}
+#showmovies {
+    background-image: url(images/marker-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* textarea Stlying */
+textarea#show{
+    margin-bottom: 25px;
+}
+/* Footer Stylings */
+footer {
+    background: gainsboro;
 }

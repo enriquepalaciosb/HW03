@@ -1,3 +1,5 @@
+// Loading the array
+let moviesArray = []; 
 //Show movies within array
     function showMovie() {
             let message = "Title  Year Released Rating\n";
@@ -6,16 +8,17 @@
             }
             document.getElementById("show").value = message;
     }
-// Loading the array
-let moviesArray = []; 
-moviesArray.length = 10;
 //Make sure that you tell the user which field is empty
     function addMovie() {
+        if (moviesArray.length >= 10) {
+            alert("Whoops, you only get ten movies.");
+            return;
+        } 
         let movieTitle = document.getElementById("title").value.trim();
         let yearReleased = document.getElementById("year").value.trim();
         let userRating = document.getElementById("rating").value.trim();
         //VALIDATION 
-        if (movieTitle === '' || yearReleased === '' || userRating === '' ) {
+        if (movieTitle === "" || yearReleased === "" || userRating === "" ) {
             alert('Please, fill out the empty fields :)');
         } else if (userRating >= 6) {
             alert('Please enter a number between 1 & 5 :)');

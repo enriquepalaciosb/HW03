@@ -45,6 +45,8 @@ legend {
 /* textarea Stlying */
 textarea#show{
     margin-bottom: 25px;
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;;
 }
 /* Footer Stylings */
 footer {
